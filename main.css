@@ -1,0 +1,280 @@
+/* Start Global Rules */
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(30, 0, 77);
+    font-family: "Tajawal", sans-serif;
+}
+
+/* End Global Rules */
+
+/* Parent Rules */
+
+.parent{
+    direction: rtl;
+}
+
+
+
+
+
+/* Center Div: used to center elements */
+
+.center-div{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* tasks table */
+
+.tasks-table{
+    width: 60%;
+    /* height: 500px; */
+    margin-top: 100px;
+    background-color: rgb(239, 239, 239);
+}
+
+
+
+
+/* table header */
+.hdr-table{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(92, 52, 155);
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/* Circular class */
+
+button{
+    border: none;
+    font-size: 20px;
+    box-shadow: 0px 3px 5px rgba(168, 168, 168, 0.3);
+}
+
+button.circular{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* to center icons */
+    line-height: 0;
+}
+
+/* hdr title and button */
+
+.hdr-table h1{
+    display: inline;
+}
+
+.hdr-table button{
+    float: right;
+    margin-right: 10px;
+}
+
+/* ------------------------------------------ */
+
+/* tasks */
+.tasks{
+    padding: 20px;
+}
+
+
+/* Task */
+
+.task{
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s;
+}
+
+
+
+.task:hover{
+    box-shadow: 0px 3px 15px rgba(97, 97, 97, 0.843);
+    border: none;
+}
+
+@media (min-width: 1200px){
+    .task-info{
+        width: 70%;
+    }
+    
+    .task-actions{
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+
+
+
+@media (min-width: 992px ) and (max-width: 1199px){
+    .task-info{
+    width: 50%;
+    }
+
+    .task-actions{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .del-button{
+        margin-left: 10px;
+    }
+
+    .select-button{
+        margin-left: 10px;
+    }
+
+
+}
+
+@media (max-width: 768px){
+    .tasks-table{
+        width: 100%;
+    }
+
+    .task{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .task-info{
+    width: 100%;
+    }
+
+    .info-date{
+        margin-bottom: 12px;
+    }
+
+    .task-actions{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+}
+
+
+
+
+
+.del-button{
+    background-color: rgba(116, 0, 0);
+    color: white;
+}
+
+.select-button{
+    background-color: rgba(0, 150, 30);
+    color: white;
+}
+
+.cancelSelection-button{
+    background-color: rgba(118, 0, 101);
+    color: white;
+}
+
+.edit-button{
+    background-color: rgba(0, 16, 197, 0.692);
+    color: white;
+}
+
+/* adding task */
+.adding-task, 
+.updating-task{ 
+    padding: 20px;
+    text-align: center;
+    display: none;
+}
+
+.adding-info, .updating-info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+    .adding-info, .updating-info{
+        flex-direction: column;
+    }
+
+    .adding-info input,
+.updating-info input{
+    margin-bottom: 15px;
+}
+
+}
+.adding-info input,
+.updating-info input{
+    border-radius: 10px;
+    width: 200px;
+    height: 45px;
+    border: 0.5px solid #ccc;
+    padding: 3px;
+}
+
+.adding-task button,
+.updating-task button{
+    font-size: 23px;
+    /* font-weight: bold; */
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.adding-task button:first-child,
+.updating-task button:first-child{
+    background-color: rgba(0, 150, 30);
+    margin-left: 10px;
+}
+
+.adding-task button:first-child:hover,
+.updating-task button:first-child:hover{
+    background-color: rgb(0, 175, 35);
+    margin-left: 10px;
+}
+
+.adding-task button:last-child,
+.updating-task button:last-child{
+    background-color: rgba(116, 0, 0);
+    color: white;
+}
+
+.adding-task button:last-child:hover
+.updating-task button:last-child:hover{
+    background-color: rgb(155, 39, 39);
+    color: white;
+}
+
+.error-msg,
+.updateError-msg{
+    /* display: block; */
+    color: red;
+    margin-bottom: 10px;
+    display: none;
+}
+/* ---------------------- */
+
+.done{
+    background-color: rgb(158, 253, 160);
+}
+

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- External Libraries - icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Styling files -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+
+
+
+</head>
+<body>
+    <div class="parent">
+        <!-- Center Div -->
+        <div class="center-div">
+
+
+            <!-- Tasks Table -->
+            <div class="tasks-table">
+
+                <!-- Table Header -->
+                <div class="hdr-table">
+                    <h1>مهامي</h1>
+                    <button class="circular add-button">
+                        <span class="material-symbols-outlined">add</span>
+                    </button>
+                </div>
+                <!-- End Table Header -->
+
+                <!-- Adding Task -->
+                <div class="adding-task">
+                    <div class="adding-info">
+                        <h3>من فضلك، أدخل اسم المهمة التي تريد اضافتها:</h3>
+                        <input type="text" name="newTask" placeholder="اسم المهمة">
+                    </div>
+                    <span class="error-msg">الرجاء إدخال اسم المهمة قبل الاضافة!!</span>
+                    <div class="adding-btns">
+                        <button>إضافة</button>
+                        <button>العودة</button>
+                    </div>
+                    
+                </div>
+                <!-- Ending Adding Task -->
+
+                <!-- Updating Task -->
+                <div class="updating-task">
+                    <div class="updating-info">
+                        <h3>من فضلك, أدخل اسم المهمة الجديد لتعديلها:</h3>
+                        <input type="text" name="taskNameUpdating" placeholder="اسم المهمة">
+                    </div>
+                    <span class="updateError-msg">الرجاء ادخال اسم المهمة الجديد للتعديل!!</span>
+                    <div class="updating-btns">
+                        <button>تعديل</button>
+                        <button>العودة</button>
+                    </div>
+                    
+                </div>
+                <!-- Ending Updating Task -->
+
+                
+                <!-- Tasks -->
+                <div class="tasks">
+
+
+                    <!-- Task -->
+                    <div class="task">
+                        <!-- Task Info -->
+                        <div class="task-info">
+                            <h2>قراءة الكتاب</h2>
+                            <div class="info-date">
+                                <span class="material-symbols-outlined">calendar_month</span>
+                                <span>10/10/2024</span>
+                            </div>
+                        </div>
+                        <!-- End Task Info -->
+
+                        <!-- Task Actions -->
+                        <div class="task-actions" >
+
+                            <button class="circular del-button">
+                                <span class="material-symbols-outlined">delete</span>
+                            </button>
+
+                            <button class="circular select-button">
+                                <span class="material-symbols-outlined">done</span>
+                            </button>
+
+                            <button class="circular edit-button">
+                                <span class="material-symbols-outlined">edit_note</span>
+                            </button>
+                        </div>
+                        <!-- End Task Actions -->
+
+                    </div>
+                    <!-- End Task -->
+
+
+                    <!-- Task -->
+                    <div class="task">
+                        <!-- Task Info -->
+                        <div class="task-info">
+                            <h2>قراءة الكتاب</h2>
+                            <div class="info-date">
+                                <span class="material-symbols-outlined">calendar_month</span>
+                                <span>10/10/2024</span>
+                            </div>
+                        </div>
+                        <!-- End Task Info -->
+
+                        <!-- Task Actions -->
+                        <div class="task-actions" >
+
+                            <button class="circular del-button">
+                                <span class="material-symbols-outlined">delete</span>
+                            </button>
+
+                            <button class="circular select-button">
+                                <span class="material-symbols-outlined">done</span>
+                            </button>
+
+                            <button class="circular edit-button">
+                                <span class="material-symbols-outlined">edit_note</span>
+                            </button>
+                        </div>
+                        <!-- End Task Actions -->
+
+                    </div>
+                    <!-- End Task -->
+
+                    
+                    <!-- Task -->
+                    <div class="task">
+                        <!-- Task Info -->
+                        <div class="task-info">
+                            <h2>قراءة الكتاب</h2>
+                            <div class="info-date">
+                                <span class="material-symbols-outlined">calendar_month</span>
+                                <span>10/10/2024</span>
+                            </div>
+                        </div>
+                        <!-- End Task Info -->
+
+                        <!-- Task Actions -->
+                        <div class="task-actions" >
+
+                            <button class="circular del-button">
+                                <span class="material-symbols-outlined">delete</span>
+                            </button>
+
+                            <button class="circular select-button">
+                                <span class="material-symbols-outlined">done</span>
+                            </button>
+
+                            <button class="circular edit-button">
+                                <span class="material-symbols-outlined">edit_note</span>
+                            </button>
+                        </div>
+                        <!-- End Task Actions -->
+
+                    </div>
+                    <!-- End Task -->
+
+                   
+
+                </div>
+                <!-- End Tasks -->
+
+            </div>
+            <!-- End Tasks Table -->
+
+
+
+
+        </div>
+        <!-- End Center Div -->
+    </div>
+</body>
+
+<!-- main script file -->
+<script src="main.js"></script>
+
+</html>
